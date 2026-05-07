@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap">
 
     <style>
         :root {
@@ -165,7 +165,7 @@
         .hero__visual {
             flex: 1 0 0;
             align-self: stretch;
-            background: url("./assets/hero.png") center / cover no-repeat;
+            background: url("./assets/hero.png") lightgray -477.016px -111.769px / 204.907% 143.663% no-repeat;
             background-blend-mode: multiply;
         }
 
@@ -218,8 +218,8 @@
         }
 
         .issue-card--wide {
-            width: auto;
-            flex: 1 0 0;
+            width: 656px;
+            flex: 0 0 656px;
         }
 
         .issue-card__noise {
@@ -287,15 +287,14 @@
         .about-section {
             width: 1328px;
             max-width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
+            display: flex;
+            gap: 64px;
             align-items: flex-start;
         }
 
         .about-section__intro {
-            width: 100%;
-            flex: 1 1 auto;
+            width: 608px;
+            flex: 0 0 608px;
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -323,8 +322,8 @@
         }
 
         .about-list {
-            width: 100%;
-            flex: 1 1 auto;
+            width: 656px;
+            flex: 0 0 656px;
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -514,8 +513,8 @@
             background: rgba(255, 255, 255, 0.56);
             border-radius: var(--radius-24);
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
+            grid-template-columns: 1fr 568px;
+            gap: 32px;
             padding: 12px;
             box-sizing: border-box;
         }
@@ -882,7 +881,7 @@
             outline-offset: 2px;
         }
 
-        @media (max-width: 0px) {
+        @media (max-width: 768px) {
             .config-page {
                 padding: var(--space-24) var(--space-16);
                 gap: var(--space-40);
@@ -1051,43 +1050,6 @@
 
             .layout {
                 grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 0px) {
-            .config-page {
-                padding: 16px 12px;
-                gap: 28px;
-            }
-
-            .hero__content {
-                padding: 18px;
-                gap: 16px;
-            }
-
-            .hero__title,
-            .cards-section__title,
-            .about-section__title,
-            .bonus-steps__title,
-            .grant-form__title,
-            .section-head__title {
-                font-size: 30px;
-                line-height: 34px;
-            }
-
-            .hero__lead,
-            .about-section__lead {
-                font-size: 15px;
-                line-height: 22px;
-            }
-
-            .card {
-                padding: 16px;
-                border-radius: 16px;
-            }
-
-            .grant-form {
-                padding: 12px;
             }
         }
     </style>
