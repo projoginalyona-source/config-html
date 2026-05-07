@@ -218,8 +218,8 @@
         }
 
         .issue-card--wide {
-            width: 656px;
-            flex: 0 0 656px;
+            width: auto;
+            flex: 1 0 0;
         }
 
         .issue-card__noise {
@@ -287,14 +287,15 @@
         .about-section {
             width: 1328px;
             max-width: 100%;
-            display: flex;
-            gap: 64px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
             align-items: flex-start;
         }
 
         .about-section__intro {
-            width: 608px;
-            flex: 0 0 608px;
+            width: 100%;
+            flex: 1 1 auto;
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -322,8 +323,8 @@
         }
 
         .about-list {
-            width: 656px;
-            flex: 0 0 656px;
+            width: 100%;
+            flex: 1 1 auto;
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -513,8 +514,8 @@
             background: rgba(255, 255, 255, 0.56);
             border-radius: var(--radius-24);
             display: grid;
-            grid-template-columns: 1fr 568px;
-            gap: 32px;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
             padding: 12px;
             box-sizing: border-box;
         }
