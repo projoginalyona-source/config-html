@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap">
 
     <style>
         :root {
@@ -165,7 +165,7 @@
         .hero__visual {
             flex: 1 0 0;
             align-self: stretch;
-            background: url("/Users/alyona/.cursor/projects/Users-alyona/assets/hero__1_-1d6f600f-29d1-4078-852c-daf909b37a3e.png") lightgray -477.016px -111.769px / 204.907% 143.663% no-repeat;
+            background: url("./assets/hero.png") center / cover no-repeat;
             background-blend-mode: multiply;
         }
 
@@ -1050,6 +1050,43 @@
 
             .layout {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .config-page {
+                padding: 16px 12px;
+                gap: 28px;
+            }
+
+            .hero__content {
+                padding: 18px;
+                gap: 16px;
+            }
+
+            .hero__title,
+            .cards-section__title,
+            .about-section__title,
+            .bonus-steps__title,
+            .grant-form__title,
+            .section-head__title {
+                font-size: 30px;
+                line-height: 34px;
+            }
+
+            .hero__lead,
+            .about-section__lead {
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            .card {
+                padding: 16px;
+                border-radius: 16px;
+            }
+
+            .grant-form {
+                padding: 12px;
             }
         }
     </style>
